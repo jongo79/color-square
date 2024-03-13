@@ -23,14 +23,14 @@ class ColorChangingCircle extends Component {
 
     // Style object for the circle
     const circleStyle = {
-      width: `${170 * zoomLevel}px`, // Adjust width based on zoom level
-      height: `${170 * zoomLevel}px`, // Adjust height based on zoom level
+      width: `${190 * zoomLevel}px`, // Adjust width based on zoom level
+      height: `${190 * zoomLevel}px`, // Adjust height based on zoom level
                       // Construct RGBA color string based on state values| String Interpolation: Inside a template literal, you can embed expressions or variables using ${} syntax. These expressions are evaluated and the result is inserted into the string.    
       backgroundColor: `rgba(${red}, ${green}, ${blue}, ${opacity})`, //A template literal (``) is a feature in JavaScript that allows for easier string interpolation and multiline strings compared to traditional string concatenation or interpolation methods.
                       //String Interpolation: Inside a template literal, you can embed expressions or variables using ${} syntax. These expressions are evaluated and the result is inserted into the string.    
       transition: 'background-color 0.5s ease',
       margin: 'auto', // Center the circle horizontally
-      marginTop: '10vh', // Position the circle vertically in the center of the screen
+      marginTop: '5vh', // Position the circle vertically in the center of the screen
       borderRadius: `${borderRadius}%`, // Use border-radius to control the shape
       transform: `rotate(${rotationDegree}deg)`, // Rotate the square
       position: 'relative' // Ensure the circle is a positioned element
@@ -39,10 +39,10 @@ class ColorChangingCircle extends Component {
     return (
       <div style={{display: 'block'}}>
         {/* Title */}
-        <div style={{ width:'100', height:'80 ' }}><h1 style={{ textAlign: 'center' }}>Color And Opacity Changing App</h1></div>
+        <div style={{ width:'100', height:'100 ' }}><h1 style={{ textAlign: 'center' }}>Color And Opacity Changing App</h1></div>
 
         {/* Sliders container */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '-10px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '10px' }}>
              
           
           {/* Red slider|Definine an event handler function for the onChange event of a <Slider> component */} 
